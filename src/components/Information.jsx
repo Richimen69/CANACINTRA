@@ -37,12 +37,14 @@ const Information = () => {
       </div>
     );
   return (
-    <div className="flex items-center justify-center py-20">
+    <div className="flex flex-col items-center justify-center py-20">
+      <p className="text-3xl text-red-600 font-bold ">{credencial.cargo}</p>
       <div className="profile-card w-[350px] rounded-md shadow-xl overflow-hidden z-[100] relative cursor-pointer snap-start shrink-0 bg-white flex flex-col items-center justify-center gap-3 transition-all duration-300 group">
         <div className="avatar w-full pt-5 flex items-center justify-center flex-col gap-1">
           <div className="img_container w-full flex items-center justify-center relative z-40 after:absolute after:h-[6px] after:w-full after:bg-[#58b0e0] after:top-4 after:group-hover:size-[1%] after:delay-300 after:group-hover:delay-0 after:group-hover:transition-all after:group-hover:duration-300 after:transition-all after:duration-300 before:absolute before:h-[6px] before:w-full before:bg-[#58b0e0] before:bottom-4 before:group-hover:size-[1%] before:delay-300 before:group-hover:delay-0 before:group-hover:transition-all before:group-hover:duration-300 before:transition-all before:duration-300">
+            
             <img
-              className="size-72 z-40 border-4 border-white rounded-full group-hover:border-8 group-hover:transition-all group-hover:duration-300 transition-all duration-300"
+              className="size-72 z-40 border-4 border-white rounded-full group-hover:border-8 group-hover:transition-all group-hover:duration-300 transition-all duration-300 object-cover"
               id="avatar"
               src={credencial.image_url}
             />

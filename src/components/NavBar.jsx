@@ -47,11 +47,19 @@ const NavBar = () => {
                 <li>
                   <a
                     className="text-secondary transition hover:text-gray-500/75"
-                    href="/eventos"
+                    href="/actividades"
                   >
                     EVENTOS
                   </a>
-                </li>            
+                </li>  
+                <li>
+                  <a
+                    className="text-secondary transition hover:text-gray-500/75"
+                    href="/partner"
+                  >
+                    SOCIOS
+                  </a>
+                </li>           
               </ul>
             </nav>
 
@@ -105,9 +113,17 @@ const NavBar = () => {
             <li>
               <a
                 className="text-secondary transition hover:text-gray-500/75"
-                href="/eventos"
+                href="/actividades"
               >
                 EVENTOS
+              </a>
+            </li>
+            <li>
+              <a
+                className="text-secondary transition hover:text-gray-500/75"
+                href="/partner"
+              >
+                SOCIOS
               </a>
             </li>
           </ul>
